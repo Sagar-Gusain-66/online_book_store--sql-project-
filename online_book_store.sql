@@ -38,19 +38,19 @@ SELECT * FROM Orders;
 
 -- Import Data into Books Table
 copy Books(Book_ID, Title, Author, Genre, Published_Year, Price, Stock )
-FROM 'D:\online book store sql project\Books.csv'
+FROM 'path/to/Books.csv'
 DELIMITER ',' CSV HEADER;
 
 
 
 -- Import Data into Customers Table
 COPY Customers(Customer_ID, Name, Email, Phone, City, Country) 
-FROM 'D:\online book store sql project\Customers.csv' 
+FROM 'path/to/Customers.csv' 
 CSV HEADER;
 
 -- Import Data into Orders Table
 COPY Orders(Order_ID, Customer_ID, Book_ID, Order_Date, Quantity, Total_Amount) 
-FROM 'D:\online book store sql project\Orders.csv' 
+FROM 'path/to/Orders.csv' 
 CSV HEADER;
 
 
