@@ -8,3 +8,5 @@ This project includes database schema creation, data import from CSV files, and 
 - **Books**: book details (title, author, genre, price, stock, etc.)
 - **Customers**: customer information
 - **Orders**: links books and customers with order details
+
+⚠️ Replace 'path/to/...csv' with the absolute path on your system.
